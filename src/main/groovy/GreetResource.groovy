@@ -6,6 +6,6 @@ class GreetResouce {
 
     @GET
     def greet() {
-        return template
+        return String.format(template, 'dropwizard')
     }
 }

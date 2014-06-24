@@ -11,6 +11,6 @@ class MainService extends Service<Conf> {
     void initialize(Bootstrap bootstrap) {}
     void run(Conf conf, Environment env) {
         // env.addResource(new GreetResouce(template: conf.template))
-        env.addResource(new GreetResouce())
+        env.addResource(new GreetResouce(template: conf.template))
     }
 }
