@@ -18,6 +18,9 @@ buildscript {
     }
 }
 
+ext {
+    conf = './conf.yml'
+}
 repositories {
     mavenCentral()
 }
@@ -45,8 +48,8 @@ fatJar {
     exclude 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.SF'
 }
 
-// run {
-//     args 'server', dropWizardConfig
-// }
+run {
+    args 'server', conf
+}
 
 task stage(dependsOn: ['clean', 'fatJar'])

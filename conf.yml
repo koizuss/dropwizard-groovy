@@ -1,0 +1,4 @@
+template: Hello, %s!
+
+http:
+  port: 8080
