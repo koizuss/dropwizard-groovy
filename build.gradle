@@ -27,8 +27,8 @@ repositories {
 
 dependencies {
     def dropwizardVersion = '0.7.1'
-    runtime "io.dropwizard:dropwizard-assets:$dropwizardVersion"
     compile "io.dropwizard:dropwizard-core:$dropwizardVersion"
+    compile "io.dropwizard:dropwizard-assets:$dropwizardVersion"
 //     def dropwizardVersion = '0.6.2'
 //     runtime group: 'com.yammer.dropwizard', name: 'dropwizard-assets', version: dropwizardVersion
 //     compile group: 'com.yammer.dropwizard', name: 'dropwizard-core', version: dropwizardVersion
