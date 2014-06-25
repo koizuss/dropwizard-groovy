@@ -1,5 +1,5 @@
 import org.hibernate.validator.constraints.NotEmpty
-import com.yammer.dropwizard.config.Configuration
+import io.dropwizard.Configuration
 
 class Conf extends Configuration {
     @NotEmpty
